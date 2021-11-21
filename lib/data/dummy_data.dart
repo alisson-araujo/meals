@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import '../models/category.dart';
- 
+
 const dummyCategories = [
   Category(
     id: 'c1',
