@@ -29,7 +29,7 @@ class _TabsScreenState extends State<TabsScreen> {
   void initState() {
     super.initState();
     _screens = [
-      CategoriesScreen(),
+      const CategoriesScreen(),
       FavoriteScreen(widget.favoriteMeals),
     ];
   }
@@ -46,7 +46,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_titles[_selectedScreenIndex]),
       ),
-      drawer: MainDrawer(),
+      drawer: const MainDrawer(),
       body: _screens[_selectedScreenIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectScreen,
